@@ -1,0 +1,57 @@
+<html>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <script src="js/clientes.js"></script>
+  <script src="js/detalleClientes.js"></script>
+
+  <title>Detalle clientes</title>
+</head>
+
+<body>
+<div class="container-fluid bg-dark py-5 py-5">
+  <div class="container text-white">
+    <h1 class="display-3 text-center"> <b> Cliente </b> </h1>
+  </div>
+</div>
+<div class="container-fluid bg-white py-5">
+  <form class="container-fluid row g-3 bg-secondary">
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">ID</label>
+      <input type="number" class="form-control" id="id_cliente" disabled/> <br />
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name_cliente" /> <br />
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">Age</label>
+      <input type="number" class="form-control" id="age_cliente" /> <br />
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">Email</label>
+      <input type="text" class="form-control" id="email_cliente" disabled> <br />
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password_cliente" /> <br />
+    </div>
+    <div class="col-md-6">
+      <button id="boton" class="btn btn-primary" onclick="actualizarCliente()">Guardar</button>
+    </div>
+    <div class="col-md-6">
+      <a class="btn btn-primary" href="index.html">Regresar</a>
+    </div>
+  </form>
+
+</div>
+
+
+</body>
+<script>
+  $("#boton").click(function(e){
+    e.preventDefault();
+  });
+
+</script>
+</html>

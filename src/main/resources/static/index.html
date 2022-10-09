@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script src="js/clientes.js"></script>
+        <title>Clientes</title>
+    </head>
+    <body>
+
+        <div class="container-fluid bg-dark py-5 py-5">
+            <div class="container text-white">
+                <h1 class="display-3 text-center"> <b> Cliente </b> </h1>
+            </div>
+        </div>
+        <div class="row g-3 bg-laigh py-3">
+            <div class="col-md-3">
+                <h1 class="display-12 text-center">Registrar cliente</h1>
+            </div>
+        </div>
+        <div class="container-fluid bg-white py-5">
+            <form  class="container-fluid row g-3 bg-secondary">
+                <div class="col-md-6">
+                    <label class="form-label">Name</label>
+                    <input type="text" id="name_cliente"> <br>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Email</label>
+                    <input type="text" id="email_cliente"> <br>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Age</label>
+                    <input type="number" id="age_cliente"> <br>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Password</label>
+                    <input type="password" id="password_cliente"> <br>
+                </div>
+                <div class="col-md-6">
+                    <button id="boton" class="btn btn-primary" onclick="guardarcliente()">Guardar</button>
+                </div>
+                <div class="col-md-6">
+                    <a class="btn btn-primary" href="index.html">Regresar</a>
+                </div>
+            </form>
+        </div>
+
+
+        <a href="index.html">Volver al inicio</a>
+        <h4>Clientes Registrados</h4>
+
+        <div id="tabla_cliente">
+            <!-- Esto es un comentario en html, y
+            puede ser multilinea -->
+        </div>
+
+    </body>
+    <script>
+        $("#boton").click(function(e){
+            e.preventDefault();
+        })
+
+    </script>
+</html>
